@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+    app:
+        container_name: ecdltd-native-php-container
+        build: ./
+        image: ecdltd-native-php-app
+        restart: unless-stopped
+        working_dir: /var/www/
+        volumes:
+            - ./:/var/www
+            - ./php.ini:/usr/local/etc/php/php.ini
