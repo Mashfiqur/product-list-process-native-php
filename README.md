@@ -22,7 +22,7 @@ cp docker-compose-example.yml docker-compose.yml
 
 ### Build the app
 ```sh
-docker-compose up
+docker-compose up -d
 ```
 
 ### If you want to run the parser from your terminal
@@ -34,7 +34,9 @@ docker exec -it ecdltd-native-php-container bash
 Step 2: Need to move some teb separated file and comma separated file inside the directory input_files/
         Suppose the name of the files are products_comma_separated.csv and products_tab_separated.tsv
 
-Step 3: Run this command 
+Step 3: create a folder named 'output_files' in root directory
+
+Step 4: Run this command 
 
 For CSV file:
 ```sh
